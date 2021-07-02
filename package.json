@@ -1,0 +1,24 @@
+{
+  "name": "login-register-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "formidable": "^1.2.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wowosz/Register-Login-Site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wowosz/Register-Login-Site/issues"
+  },
+  "homepage": "https://github.com/Wowosz/Register-Login-Site#readme"
+}
