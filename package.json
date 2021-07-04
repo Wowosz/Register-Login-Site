@@ -4,8 +4,11 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
+    "create-react-app": "^4.0.3",
+    "express": "^4.17.1",
     "formidable": "^1.2.2",
-    "express": "^4.17.1"
+    "react": "^17.0.2",
+    "react-router": "^5.2.0"
   },
   "devDependencies": {},
   "scripts": {
