@@ -1,4 +1,44 @@
-form {
+.inputSoft {
+    border: 0;
+    background: 0;
+    border-bottom: 1px solid white;
+    width: 50%;
+    margin-bottom: 5%;
+    line-height: 1.5em;
+    font-size: large;
+    outline: 0;
+    color: white;
+
+    &::placeholder{
+        color: white;
+    }
+}
+.loginForm {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginButton {
+    width: 40%;
+    line-height: 2em;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid black;
+
+    &:focus {
+        -webkit-box-shadow: inset 0px 0px 5px 5px rgba(0,0,0,0.20); 
+        box-shadow: inset 0px 0px 5px 5px rgba(0,0,0,0.20);
+    }
+}
+
+.loginText{
+    color: white;
+    > a{
+        color: white;
+
+    }
 }
