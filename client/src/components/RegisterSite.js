@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import BaseSite from "./BaseSite"
 import styles from "../styles/RegisterSite.module.scss"
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 export default function LoginSite(){
     const [login, setLogin] = useState("");
     const [password, setPassword] = useState("");
     const [email, setEmail] = useState("");
+    const history = useHistory();
 
     return(
         <BaseSite site={RegisterForm()}/>
@@ -14,7 +15,7 @@ export default function LoginSite(){
 
     function RegisterForm() {
         return(
-            <form className={styles.registerForm}>
+            <form className={styles.registerForm}>    
                 <input type="text" name="login" placeholder="Login" autocomplete="off" className={styles.inputSoft} value={login} onChange={e => setLogin(e.target.value)}/>
                 <input type="text" name="password" placeholder="Password" autocomplete="off" className={styles.inputSoft} value={password} onChange={e => setPassword(e.target.value)}/>
                 <input type="text" name="email" placeholder="Email" autocomplete="off" className={styles.inputSoft} value={email} onChange={e => setEmail(e.target.value)}/>
@@ -31,6 +32,7 @@ export default function LoginSite(){
     }
 
     function Register(){
-        console.log("register");
+        history.push("/");
     }
+
 }
